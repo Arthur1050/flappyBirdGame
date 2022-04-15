@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backForest {
+    position: relative;
+    left: 0;
+    height: 100%;
+}
+
+.bird {
+    position: absolute;
+    z-index: 1;
+    height: 5em;
+}
+
+div.screenGame {
+    position: relative;
+    overflow: hidden;
+    width: 595px;
+    min-width: 300px;
+    height: 399px;
+    min-height: 201px;
+    left: auto;
+    right: auto;
+}
+
+@media (max-width: 700px) {
+    div.screenGame {
+        width: 85vw;
+        height: 57vw;
+    }
+}
+
+body {
+    background-color: rgb(33, 37, 33);
+}
